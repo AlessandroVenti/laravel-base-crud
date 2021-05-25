@@ -1,0 +1,12 @@
+header h1 {
+  background-color: red;
+}
+
+main h1 {
+  background-color: green;
+}
+
+footer h1 {
+  background-color: blue;
+}
+
