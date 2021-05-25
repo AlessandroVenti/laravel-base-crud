@@ -71,7 +71,20 @@
 .container main .homeLayout a {
   font-size: 25px;
   color: black;
-  text-shadow: 1px 0px #008cff, 0px 1px #008cff, 2px 1px #008cff, 1px 2px #008cff, 3px 2px #008cff, 2px 3px #008cff, 4px 3px #008cff, 3px 4px #008cff, 5px 4px #008cff, 4px 5px #008cff, 6px 5px #008cff, 5px 6px #008cff, 7px 6px #008cff, 6px 7px #008cff, 8px 7px #008cff, 7px 8px #008cff, 8px 8px #008cff;
+}
+
+.container main .button {
+  height: 10vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  text-align: center;
+  grid-template-areas: "button";
+}
+
+.container main .button div {
+  grid-area: button;
+  background-color: black;
 }
 
 .container main form {
