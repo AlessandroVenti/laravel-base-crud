@@ -12,11 +12,46 @@
      grid-template-rows: 1fr;
      grid-template-areas: 
           "header main footer";
+     
+     header {
+          background-color: black;
+          text-align: center;
+          padding: 30px 0;
+          font-size: 30px;
+          color: grey;
+          grid-area: header;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+          grid-template-areas: 
+               "l"
+               "i"
+               "s"
+               "t"
+               "a";
 
-      header {
-           background-color: black;
-           grid-area: header;
+          .l {
+               grid-area: l;
+          }
+
+          .i {
+               grid-area: i;
+          }
+
+          .s {
+               grid-area: s;
+          }
+
+          .t {
+               grid-area: t;
+          }
+
+          .a {
+               grid-area: a;
+          }
+
      }
+          
 
      main {
           background-color: brown;
@@ -30,8 +65,8 @@
                align-items: center;
 
                li {
-                    flex-basis: 25%;
-                    padding: 20px;
+                    flex-basis: 20%;
+                    padding:10px;
                     margin: 0 20px;
                     border-radius: 10px;
                     box-shadow: 
@@ -71,9 +106,8 @@
                     background-color: brown;
                     box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
                               inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
-                              border: 0;
-                              border-radius: 10px;
-
+                    border: 0;
+                    border-radius: 10px;
                }
 
                input:last-child {
@@ -87,7 +121,47 @@
      }
 
      footer {
-               background-color: black;
-               grid-area: footer;
+          background-color: black;
+          grid-area: footer;
+          padding: 30px 0;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(6,1fr);
+          color: grey;
+          text-align: center;
+          font-size: 30px;
+          grid-template-areas: 
+               "o"
+               "s"
+               "p"
+               "i"
+               "t"
+               "i";
+
+          .o-footer {
+               grid-area: o;
+          }
+
+          .s-footer {
+               grid-area: s;
+          }
+
+          .p-footer {
+               grid-area: p;
+          }
+
+          .i-footer {
+               grid-area: i;
+          }
+
+          .t-footer {
+               grid-area: t;
+          }
+
+          .i-footer {
+               grid-area: i;
+          }
+
+
      }
 }

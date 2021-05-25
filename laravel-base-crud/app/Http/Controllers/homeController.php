@@ -22,11 +22,11 @@ class homeController extends Controller
 
    public function storeFunction(Request $request) {
         $validate = $request ->validate([
-            'name' => 'nullable',
-            'lastname' => 'nullable',
-            'date_of_birth' => 'nullable',
-            'document_type' => 'nullable',
-            'document_number' => 'nullable',
+            'name' => 'required',
+            'lastname' => 'required',
+            'date_of_birth' => 'required',
+            'document_type' => 'required',
+            'document_number' => 'required',
         ]);
         $guest = Ospiti::create($validate);
         return redirect() -> route('guest', $guest -> id);

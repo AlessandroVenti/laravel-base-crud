@@ -15,7 +15,35 @@
 
 .container header {
   background-color: black;
+  text-align: center;
+  padding: 30px 0;
+  font-size: 30px;
+  color: grey;
   grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "l" "i" "s" "t" "a";
+}
+
+.container header .l {
+  grid-area: l;
+}
+
+.container header .i {
+  grid-area: i;
+}
+
+.container header .s {
+  grid-area: s;
+}
+
+.container header .t {
+  grid-area: t;
+}
+
+.container header .a {
+  grid-area: a;
 }
 
 .container main {
@@ -32,8 +60,8 @@
 }
 
 .container main .homeLayout li {
-  flex-basis: 25%;
-  padding: 20px;
+  flex-basis: 20%;
+  padding: 10px;
   margin: 0 20px;
   border-radius: 10px;
   box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
@@ -72,5 +100,37 @@
 .container footer {
   background-color: black;
   grid-area: footer;
+  padding: 30px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  color: grey;
+  text-align: center;
+  font-size: 30px;
+  grid-template-areas: "o" "s" "p" "i" "t" "i";
+}
+
+.container footer .o-footer {
+  grid-area: o;
+}
+
+.container footer .s-footer {
+  grid-area: s;
+}
+
+.container footer .p-footer {
+  grid-area: p;
+}
+
+.container footer .i-footer {
+  grid-area: i;
+}
+
+.container footer .t-footer {
+  grid-area: t;
+}
+
+.container footer .i-footer {
+  grid-area: i;
 }
 
