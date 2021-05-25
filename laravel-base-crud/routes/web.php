@@ -7,3 +7,5 @@ Route::get('/', function () {
 });
 
 Route::get('home', 'homeController@homeFunction');
+
+Route::get('/guest/{id}', 'homeController@guestFunction')->name('guest');
