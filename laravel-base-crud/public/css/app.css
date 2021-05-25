@@ -1,12 +1,53 @@
-header h1 {
-  background-color: red;
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
 }
 
-main h1 {
-  background-color: green;
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows: 1fr;
+  grid-template-areas: "header main footer";
 }
 
-footer h1 {
-  background-color: blue;
+.container header {
+  background-color: black;
+  grid-area: header;
+}
+
+.container main {
+  background-color: brown;
+  grid-area: main;
+}
+
+.container main .homeLayout {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container main .homeLayout li {
+  flex-basis: 25%;
+  padding: 20px;
+  margin: 0 20px;
+  border-radius: 10px;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25), -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+.container main .homeLayout a {
+  font-size: 30px;
+  color: black;
+  text-shadow: 1px 0px #008cff, 0px 1px #008cff, 2px 1px #008cff, 1px 2px #008cff, 3px 2px #008cff, 2px 3px #008cff, 4px 3px #008cff, 3px 4px #008cff, 5px 4px #008cff, 4px 5px #008cff, 6px 5px #008cff, 5px 6px #008cff, 7px 6px #008cff, 6px 7px #008cff, 8px 7px #008cff, 7px 8px #008cff, 8px 8px #008cff;
+}
+
+.container footer {
+  background-color: black;
+  grid-area: footer;
 }
 

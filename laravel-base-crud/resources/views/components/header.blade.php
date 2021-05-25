@@ -1,3 +1,4 @@
-<header>
-     <h1>I'm an header</h1>
-</header>
+<div class="container">
+     <header>
+          <h1>I'm an header</h1>
+     </header>

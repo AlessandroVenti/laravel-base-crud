@@ -1,7 +1,7 @@
 @extends('layouts.main-layout')
 @section('content')
      <main>
-          <ul>
+          <ul class="homeLayout">
                @foreach ($ospiti as $ospite)
                     <li>
                          <a href="{{ route('guest', $ospite -> id) }}">
