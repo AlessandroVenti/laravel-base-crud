@@ -10,10 +10,12 @@
                     </li>
                @endforeach
           </ul>
-          <button>
-               <a href="{{ route('addGuest') }}">
-                    Add a new Guest
-               </a>
-          </button>
+          <div class="button">
+               <button>
+                    <a href="{{ route('addGuest') }}">
+                         Add a new Guest
+                    </a>
+               </button>
+          </div>
      </main>
 @endsection
